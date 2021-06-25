@@ -10,6 +10,10 @@ Webflow.push(function () {
   while (listItem.getElementsByClassName("company-card")[i++]) itemCount++;
   document.getElementById("item-count").innerHTML = itemCount;
 });
+// Hide the tabs content until a filter parent category is selected
+$("#tablink").click(function () {
+  $("#tabcontent").attr("style", "display:block");
+});
 
 // F'in sweet CMS Library for Webflow
 
