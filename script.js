@@ -23,7 +23,7 @@ $(".ai-ml-filter").click(function () {
       console.log(count);
       document.getElementById("item-count").innerHTML = count;
     }
-  }, 100);
+  }, 500);
 });
 
 // F'in sweet CMS Library for Webflow
