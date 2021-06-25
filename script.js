@@ -19,6 +19,19 @@ $(".ai-ml-filter").click(function () {
   }, 500);
 });
 
+//Update item count on filter reset
+$(".result-count").click(function () {
+  setTimeout(function () {
+    var allElems = document.getElementsByClassName("company-item");
+    var count = 0;
+    for (var i = 0; i < allElems.length; i++) {
+      var thisElem = allElems[i];
+      if (thisElem.style.display != "none") count++;
+      document.getElementById("item-count").innerHTML = count;
+    }
+  }, 500);
+});
+
 // F'in sweet CMS Library for Webflow
 
 (function () {
