@@ -22,7 +22,7 @@ $(".tab-link").click(function () {
       filterType: "multi",
     },
     {
-      filterWrapper: ".industry-wrapperfilter",
+      filterWrapper: ".industry-wrapper-filter",
       filterType: "multi",
     },
   ];
