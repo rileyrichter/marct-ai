@@ -34,7 +34,7 @@ $(".ai-ml-filter").click(function () {
       filterType: "multi",
     },
     {
-      filterWrapper: ".vision-value-wrapper",
+      filterWrapper: ".vision-wrapperfilter",
       filterType: "multi",
     },
   ];
