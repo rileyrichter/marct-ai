@@ -21,7 +21,7 @@ $(".ai-ml-filter").click(function () {
       var thisElem = allElems[i];
       if (thisElem.style.display == "block") count++;
     }
-    console.log(count);
+    console.log(i);
   });
 });
 
