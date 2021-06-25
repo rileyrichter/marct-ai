@@ -3,7 +3,6 @@ var Webflow = Webflow || [];
 Webflow.push(function () {
   let itemCount = $(".company-item").length;
   $("#item-count").html(itemCount);
-  console.log(itemCount);
 });
 
 // Hide the tabs content until a filter parent category is selected
