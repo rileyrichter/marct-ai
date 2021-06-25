@@ -11,6 +11,14 @@ $(".tab-link").click(function () {
   $("#tabcontent").attr("style", "display:block");
 });
 
+//Update item count on filter change
+
+$(".ai-ml-filter").click(function () {
+  let itemCount = $(".company-item").length;
+  $("#item-count").append(itemCount);
+  console.log(itemCount);
+});
+
 // F'in sweet CMS Library for Webflow
 
 (function () {
@@ -37,7 +45,4 @@ $(".tab-link").click(function () {
       effects: "fade ",
     },
   });
-  let itemCount = $(".company-item").length;
-  $("#item-count").append(itemCount);
-  console.log(itemCount);
 })();
