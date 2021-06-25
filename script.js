@@ -1,11 +1,8 @@
 // Counting the number of items returned after the filter function
-
-function countItems(listID) {
-  var ul = document.getElementById(listID);
+function countItems() {
+  const ul = document.getElementById("company-list");
   var i = 0,
     itemCount = 0;
-  while (ul.getElementsByTagName("li")[i++]) itemCount++;
-  document.write(itemCount);
+  while (ul.getElementsByClassName("company-card")[i++]) itemCount++;
+  document.getElementById("item-count").innerHTML = itemCount;
 }
-
-function myFuntion() {}
