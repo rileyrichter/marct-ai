@@ -20,7 +20,7 @@ $(".ai-ml-filter").click(function () {
 });
 
 //Update item count on filter reset
-$(".result-count").click(function () {
+$(".filter-reset-main").click(function () {
   setTimeout(function () {
     var allElems = document.getElementsByClassName("company-item");
     var count = 0;
