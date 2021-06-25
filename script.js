@@ -14,7 +14,7 @@ $(".tab-link").click(function () {
 //Update item count on filter change
 
 $(".ai-ml-filter").click(function () {
-  $(function () {
+  setTimeout(function () {
     var allElems = document.getElementsByClassName("company-item");
     var count = 0;
     for (var i = 0; i < allElems.length; i++) {
@@ -22,7 +22,7 @@ $(".ai-ml-filter").click(function () {
       if (thisElem.style.display == "block") count++;
     }
     console.log(i);
-  });
+  }, 3000);
 });
 
 // F'in sweet CMS Library for Webflow
