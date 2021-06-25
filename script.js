@@ -8,6 +8,7 @@ Webflow.push(function () {
 // Hide the tabs content until a filter parent category is selected
 $(".tab-link").click(function () {
   $("#tabcontent").attr("style", "display:block");
+  $("#result-count").attr("style", "display:block");
 });
 
 //Update item count on filter change
@@ -47,6 +48,7 @@ $(".ai-ml-filter").click(function () {
   fsComponent.filter({
     filterArray: myFilters,
     activeClass: "ai-ml-active",
+    filterReset: ".filter-reset-main",
     animation: {
       enable: true,
       duration: 300,
