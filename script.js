@@ -15,7 +15,7 @@ $(".tab-link").click(function () {
 
 $(".ai-ml-filter").click(function () {
   $(function () {
-    var allElems = document.getElementsByClassName(".listitem");
+    var allElems = document.getElementsByClassName(".company-item");
     var count = 0;
     for (var i = 0; i < allElems.length; i++) {
       var thisElem = allElems[i];
