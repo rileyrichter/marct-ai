@@ -24,6 +24,11 @@ $(".tab-link").click(function () {
       filterType: "multi",
       filterByClass: ".subdomain-tag", // class of the text that holds the filter info (optional)
     },
+    {
+      filterWrapper: ".industry-wrapperfilter", // parent wrapper of filter group2
+      filterType: "multi",
+      filterByClass: ".industry-tag", // class of the text that holds the filter info (optional)
+    },
   ]; // run the filter Library component on your instance
 
   companySubdomain.filter({
