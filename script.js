@@ -2,7 +2,7 @@
 var Webflow = Webflow || [];
 Webflow.push(function () {
   let itemCount = $(".company-item").length;
-  $("#item-count").append(itemCount);
+  $("#item-count").html(itemCount);
   console.log(itemCount);
 });
 
@@ -20,7 +20,6 @@ $(".ai-ml-filter").click(function () {
     for (var i = 0; i < allElems.length; i++) {
       var thisElem = allElems[i];
       if (thisElem.style.display != "none") count++;
-      console.log(count);
       document.getElementById("item-count").innerHTML = count;
     }
   }, 500);
