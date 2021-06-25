@@ -20,8 +20,8 @@ $(".ai-ml-filter").click(function () {
     for (var i = 0; i < allElems.length; i++) {
       var thisElem = allElems[i];
       if (thisElem.style.display != "none") count++;
+      console.log(i);
     }
-    console.log(i);
   }, 3000);
 });
 
