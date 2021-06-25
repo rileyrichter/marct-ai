@@ -30,7 +30,11 @@ $(".ai-ml-filter").click(function () {
       filterType: "multi",
     },
     {
-      filterWrapper: ".industry-wrapper-filter",
+      filterWrapper: ".industry-wrapperfilter",
+      filterType: "multi",
+    },
+    {
+      filterWrapper: ".vision-value-wrapper",
       filterType: "multi",
     },
   ];
@@ -38,6 +42,7 @@ $(".ai-ml-filter").click(function () {
   fsComponent.filter({
     filterArray: myFilters,
     activeClass: "ai-ml-active",
+    filterReset: ".fiter-reset-main",
     animation: {
       enable: true,
       duration: 300,
