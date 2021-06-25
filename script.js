@@ -4,11 +4,10 @@ var Webflow = Webflow || [];
 Webflow.push(function () {
   // DOMready has fired
   // May now use jQuery and Webflow api
-  const listItem = document.getElementById("company-list");
-  var i = 0,
-    itemCount = 0;
-  while (listItem.getElementsByClassName("company-item")[i++]) itemCount++;
-  document.getElementById("item-count").innerHTML = itemCount;
+  const itemCount = $(".company-item").length;
+  $("#item-count").text(itemCount);
+  console.log(itemCount);
+  //document.getElementById("item-count").innerHTML = itemCount;
 });
 // Hide the tabs content until a filter parent category is selected
 $(".tab-link").click(function () {
