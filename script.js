@@ -37,4 +37,7 @@ $(".tab-link").click(function () {
       effects: "fade ",
     },
   });
+  let itemCount = $(".company-item").length;
+  $("#item-count").append(itemCount);
+  console.log(itemCount);
 })();
