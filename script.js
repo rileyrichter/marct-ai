@@ -5,12 +5,6 @@ Webflow.push(function () {
   $("#item-count").html(itemCount);
 });
 
-// Hide the tabs content until a filter parent category is selected
-$(".tab-link").click(function () {
-  $("#tabcontent").attr("style", "display:block");
-  $("#result-count").attr("style", "display:block");
-});
-
 //Update item count on filter change
 
 $(".ai-ml-filter").click(function () {
