@@ -20,9 +20,8 @@ $(".tab-link").click(function () {
 
   var myFilters = [
     {
-      filterWrapper: ".ai-ml-wrapperfilter", // parent wrapper of filter group2
+      filterWrapper: ".ai-ml-wrapperfilter", // parent wrapper of filter group1
       filterType: "multi",
-      filterByClass: ".subdomain-tag", // class of the text that holds the filter info (optional)
     },
     {
       filterWrapper: ".industry-wrapperfilter", // parent wrapper of filter group2
