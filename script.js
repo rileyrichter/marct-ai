@@ -21,8 +21,9 @@ $(".ai-ml-filter").click(function () {
       var thisElem = allElems[i];
       if (thisElem.style.display != "none") count++;
       console.log(count);
+      document.getElementById("item-count").innerHTML = count;
     }
-  }, 3000);
+  }, 100);
 });
 
 // F'in sweet CMS Library for Webflow
