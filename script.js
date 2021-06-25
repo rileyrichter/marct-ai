@@ -7,7 +7,7 @@ Webflow.push(function () {
   const listItem = document.getElementById("company-list");
   var i = 0,
     itemCount = 0;
-  while (listItem.getElementsByClassName("company-card")[i++]) itemCount++;
+  while (listItem.getElementsByClassName("company-item")[i++]) itemCount++;
   document.getElementById("item-count").innerHTML = itemCount;
 });
 // Hide the tabs content until a filter parent category is selected
