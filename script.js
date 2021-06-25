@@ -42,7 +42,6 @@ $(".ai-ml-filter").click(function () {
   fsComponent.filter({
     filterArray: myFilters,
     activeClass: "ai-ml-active",
-    filterReset: ".fiter-reset-main",
     animation: {
       enable: true,
       duration: 300,
