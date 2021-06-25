@@ -19,7 +19,7 @@ $(".ai-ml-filter").click(function () {
     var count = 0;
     for (var i = 0; i < allElems.length; i++) {
       var thisElem = allElems[i];
-      if (thisElem.style.display == "block") count++;
+      if (thisElem.style.display != "none") count++;
     }
     console.log(i);
   }, 3000);
