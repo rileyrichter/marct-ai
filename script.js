@@ -11,7 +11,7 @@ Webflow.push(function () {
   document.getElementById("item-count").innerHTML = itemCount;
 });
 // Hide the tabs content until a filter parent category is selected
-$("#tablink").click(function () {
+$(".tablink").click(function () {
   $("#tabcontent").attr("style", "display:block");
 });
 
