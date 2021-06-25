@@ -5,7 +5,7 @@ Webflow.push(function () {
   // DOMready has fired
   // May now use jQuery and Webflow api
   const itemCount = $(".company-item").length;
-  $("#item-count").text(itemCount);
+  $("#item-count").append(itemCount);
   console.log(itemCount);
   //document.getElementById("item-count").innerHTML = itemCount;
 });
