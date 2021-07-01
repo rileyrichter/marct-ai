@@ -3,7 +3,6 @@ var Webflow = Webflow || [];
 Webflow.push(function () {
   let itemCount = $(".company-item").length;
   $("#item-count").html(itemCount);
-  document.getElementById("year").innerHTML = new Date().getFullYear();
 });
 
 //Update item count on filter change
